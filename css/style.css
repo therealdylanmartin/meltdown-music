@@ -6,7 +6,6 @@
 
 body {
   -webkit-animation: Gradient 10s ease infinite;
-  -moz-animation: Gradient 10s ease infinite;
   animation: Gradient 10s ease infinite;
   background: linear-gradient(
     to left top,
@@ -18,42 +17,7 @@ body {
   background-size: 600% 600%;
 }
 
-.header {
-  -webkit-animation: Gradient 10s ease infinite;
-  -moz-animation: Gradient 10s ease infinite;
-  animation: Gradient 10s ease infinite;
-  background: linear-gradient(
-    to right bottom,
-    rgba(111, 213, 191, 0.2),
-    rgba(141, 235, 19, 0.4),
-    rgba(39, 228, 39, 0.2)
-  );
-  background-position: top;
-  background-size: 400% 400%;
-  clip-path: polygon(
-    0 0,
-    100% 0,
-    100% 70%,
-    50% 100%,
-    0 70%
-  ); /* top left, top right, bottom right, bottom left | (50% 0, 100% 100%, 0 100%) for a triangle */
-  height: 200px;
-  position: relative;
-}
-
 @-webkit-keyframes Gradient {
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
-  }
-}
-
-@-moz-keyframes Gradient {
   0% {
     background-position: 0% 50%;
   }
@@ -77,9 +41,108 @@ body {
   }
 }
 
+.fixed__nav,
+.fixed__to-top {
+  background: rgba(255, 255, 255, 0.2);
+  border: 1px solid rgba(39, 228, 39, .5);
+  border-radius: 50%;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  flex-wrap: wrap;
+  height: 50px;
+  justify-content: center;
+  outline: none;
+  position: fixed;
+  right: 15px;
+  width: 50px;
+  z-index: 2;
+}
+
+.fixed__nav {
+  align-items: center;
+  display: none;
+  padding: 10px 0;
+  top: 20px;
+}
+
+@media screen and (max-width: 420px) {
+  .fixed__nav {
+    display: flex;
+  }
+}
+
+.fixed__to-top {
+  align-items: center;
+  display: fixed;
+  padding: 15px 0;
+  bottom: 20px;
+}
+
+.fixed__nav:hover,
+.fixed__to-top:hover {
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  -webkit-transform: translateY(-2px);
+  transform: translateY(-2px);
+}
+
+.fixed__nav:active,
+.fixed__to-top:active {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  -webkit-transform: translateY(-1px);
+  transform: translateY(-1px);
+}
+
+.menu-line {
+  -webkit-animation: Gradient 5s ease infinite;
+  animation: Gradient 5s ease infinite;
+  background: linear-gradient(
+    to left top,
+    rgb(111, 213, 191),
+    rgb(39, 228, 39)
+  );
+  background-size: 600% 600%;
+  height: 3px;
+  margin: 3px auto 3px auto;
+  width: 30px;
+}
+
+.triangle {
+  width: 20px;
+}
+
+.header {
+  -webkit-animation: Gradient 10s ease infinite;
+  animation: Gradient 10s ease infinite;
+  background: linear-gradient(
+    to right bottom,
+    rgba(111, 213, 191, 0.2),
+    rgba(141, 235, 19, 0.4),
+    rgba(39, 228, 39, 0.2)
+  );
+  background-position: top;
+  background-size: 400% 400%;
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 70%, 50% 100%, 0 70%);
+  clip-path: polygon(0 0, 100% 0, 100% 70%, 50% 100%, 0 70%);
+  height: 200px;
+  padding: 0 10px;
+  position: relative;
+}
+
+@media screen and (max-width: 560px) {
+  .header {
+    height: 280px;
+  }
+}
+
 .header__logo {
   height: 160px;
   margin-top: 18px;
+}
+
+@media screen and (max-width: 560px) {
+  .header__logo {
+    height: 230px;
+  }
 }
 
 .header__nav {
@@ -91,10 +154,13 @@ body {
   align-items: center;
   display: flex;
   justify-content: space-around;
+  margin: 0 auto;
+  width: auto;
 }
 
 .header__nav li {
   display: inline;
+  text-align: center;
 }
 
 .header__nav a {
@@ -107,12 +173,36 @@ body {
   transition: all 0.3s ease;
 }
 
+@media screen and (max-width: 560px) {
+  .header__nav a {
+    -webkit-box-flex: 1;
+    flex: 1;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .header__nav a {
+    display: none;
+  }
+}
+
 .header__nav a:hover {
   text-decoration: underline;
 }
 
-.btn-animated {
-  animation: moveInUp 0.3s ease-in 0.2s backwards;
+.mobile-nav {
+  display: none;
+}
+
+@media screen and (max-width: 560px) {
+  .desktop-nav {
+    display: none;
+  }
+  .mobile-nav {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
 }
 
 .btn:link,
@@ -124,16 +214,6 @@ body {
   text-transform: uppercase;
   text-decoration: none;
   transition: all 0.2s;
-}
-
-.btn:hover {
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
-  transform: translateY(-3px);
-}
-
-.btn:active {
-  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
-  transform: translateY(-1px);
 }
 
 .btn::after {
