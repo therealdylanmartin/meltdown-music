@@ -19,9 +19,9 @@
     <title>Meltdown Music : Records &amp; Gear</title>
 </head>
 
-<body>
+<body id="homepage">
 
-    <button class="fixed__nav" onclick="openNavMenu()" title="Menu">
+    <button class="fixed__nav" onclick="openNavMenu()" title="Menu" id="navButton">
 
         <div class="menu-line"></div>
         <div class="menu-line"></div>
@@ -29,7 +29,7 @@
 
     </button>
 
-    <button class="fixed__to-top" onclick="scrollToTop()" title="Back to Top">
+    <button class="fixed__to-top" onclick="scrollToTop()" title="Back to Top" id="topButton">
 
         <svg xmlns="http://www.w3.org/2000/svg" class="triangle" id="Layer_1" data-name="Layer 1" viewBox="0 0 200 168.62">
             <defs>
@@ -156,7 +156,7 @@
 
     </header>
 
-    <section class="flex-y">
+    <section class="flex-y" id="title">
         <div class="fly-in__heading flex-y">
             <h1>
                 <span class="meltdown-text">
@@ -176,12 +176,17 @@
 
     <section class="section__container">
 
-        <img class="store__img" src="img/store.jpg" />
-        <h3 class="address__copy">
-            2190 Strongs Ave | Stevens Point, WI 
-        </h3>
+        <article class="section__store" id="storeImg">
 
-        <article class="section__hours flex-y">
+            <img class="store__img" src="img/store.jpg" />
+            <h3 class="store__copy">
+                2190 Strongs Ave <span class="desktop-only">|</span> <span class="mobile-only"><br /></span>Stevens Point, WI
+                <br /> 715.555.5555&nbsp;
+            </h3>
+
+        </article>
+
+        <article class="section__hours flex-y" id="hours">
 
             <div class="hours__container flex-y">
                 <h3 class="hours__title">
@@ -193,6 +198,19 @@
                     <br /> Sun
                     <span class="color-green">|</span> 12pm to 5pm
                 </h4>
+            </div>
+
+        </article>
+
+        <article class="section__map" id="map">
+
+            <div class="map__container">
+                <div class="map__store-img-box float-left">
+                    <img class="full-width" src="img/store-front.png" alt="need a pic for storefront here" />
+                </div>
+                <div class="map__img-box float-left">
+                    <img class="full-width" src="img/map.png" alt="could use google maps api here" />
+                </div>
             </div>
 
         </article>
