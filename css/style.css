@@ -1,3 +1,11 @@
+/*  Variables  */
+
+:root {
+  --main-color: #4EA81E; 
+}
+
+/*  Universal Styes  */
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -7,14 +15,9 @@
 body {
   -webkit-animation: Gradient 10s ease infinite;
   animation: Gradient 10s ease infinite;
-  background: linear-gradient(
-    to left top,
-    rgba(111, 213, 191, 0.1),
-    rgba(141, 235, 19, 0.3),
-    rgba(39, 228, 39, 0.2),
-    rgba(255, 255, 255, 0.1)
-  );
+  background: linear-gradient( to left top, rgba(111, 213, 191, 0.4), rgba(141, 235, 19, 0.3), rgba(39, 228, 39, 0.2), rgba(255, 255, 255, 0.1));
   background-size: 600% 600%;
+  height: 4000px;
 }
 
 @-webkit-keyframes Gradient {
@@ -41,41 +44,73 @@ body {
   }
 }
 
+.color-black {
+  color: #000;
+}
+
+.flex-x,
+.flex-y {
+  display: -webkit-flex;
+  display: flex;
+}
+
+.flex-x {
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-flex: 1;
+  flex: 1;
+  justify-content: space-around;
+}
+
+.flex-y {
+  -webkit-align-content: center;
+  align-content: center;
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-justify-content: center;
+  justify-content: center;
+}
+
+/*  Fixed Navigation Buttons  */
+
 .fixed__nav,
 .fixed__to-top {
   background: rgba(255, 255, 255, 0.2);
   border: 1px solid rgba(39, 228, 39, .5);
   border-radius: 50%;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-  cursor: pointer;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
   flex-wrap: wrap;
   height: 50px;
   justify-content: center;
   outline: none;
   position: fixed;
   right: 15px;
+  transition: all .5s ease;
   width: 50px;
   z-index: 2;
 }
 
 .fixed__nav {
   align-items: center;
-  display: none;
+  display: flex;
+  opacity: 0;
   padding: 10px 0;
   top: 20px;
 }
 
 @media screen and (max-width: 420px) {
   .fixed__nav {
-    display: flex;
+    cursor: pointer;
+    opacity: 1;
   }
 }
 
 .fixed__to-top {
   align-items: center;
-  display: fixed;
-  padding: 15px 0;
   bottom: 20px;
+  display: fixed;
+  opacity: 0;
+  padding: 15px 0;
 }
 
 .fixed__nav:hover,
@@ -87,19 +122,15 @@ body {
 
 .fixed__nav:active,
 .fixed__to-top:active {
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  -webkit-transform: translateY(-1px);
-  transform: translateY(-1px);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  -webkit-transform: translateY(0);
+  transform: translateY(0);
 }
 
 .menu-line {
   -webkit-animation: Gradient 5s ease infinite;
   animation: Gradient 5s ease infinite;
-  background: linear-gradient(
-    to left top,
-    rgb(111, 213, 191),
-    rgb(39, 228, 39)
-  );
+  background: linear-gradient( to left top, rgb(111, 213, 191), rgb(39, 228, 39));
   background-size: 600% 600%;
   height: 3px;
   margin: 3px auto 3px auto;
@@ -110,15 +141,12 @@ body {
   width: 20px;
 }
 
+/*  Header Container  */
+
 .header {
   -webkit-animation: Gradient 10s ease infinite;
   animation: Gradient 10s ease infinite;
-  background: linear-gradient(
-    to right bottom,
-    rgba(111, 213, 191, 0.2),
-    rgba(141, 235, 19, 0.4),
-    rgba(39, 228, 39, 0.2)
-  );
+  background: linear-gradient( to right bottom, rgba(111, 213, 191, 0.2), rgba(141, 235, 19, 0.4), rgba(39, 228, 39, 0.2));
   background-position: top;
   background-size: 400% 400%;
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 70%, 50% 100%, 0 70%);
@@ -204,6 +232,129 @@ body {
     margin-top: 20px;
   }
 }
+
+/*  Fly-In Logo Header  */
+
+.fly-in__heading {
+  -webkit-animation: FlyIn .4s ease-in-out .3s;
+  animation: FlyIn .4s ease-in-out .3s;
+  -webkit-animation-fill-mode: backwards;
+  animation-fill-mode: backwards;
+  background: linear-gradient( to left top, rgba(111, 213, 191, 0.2), rgba(141, 235, 19, 0.4), rgba(39, 228, 39, 0.2));
+  background-size: 400% 400%;
+  border-radius: 20px;
+  padding: 40px 30px;
+  -webkit-transform: translateY(60px);
+  transform: translateY(60px);
+  width: 575px;
+}
+
+@-webkit-keyframes FlyIn {
+  0% {
+    -webkit-transform: scale(0) translateY(400px);
+    transform: scale(0) translateY(400px);
+  }
+  100% {
+    -webkit-transform: scale(1) translateY(60px);
+    transform: scale(1) translateY(60px);
+  }
+}
+
+@keyframes FlyIn {
+  0% {
+    -webkit-transform: scale(0) translateY(400px);
+    transform: scale(0) translateY(400px);
+  }
+  100% {
+    -webkit-transform: scale(1) translateY(60px);
+    transform: scale(1) translateY(60px);
+  }
+}
+
+.meltdown-text,
+.music-text {
+  font-family: 'Bowlby One SC', 'Luckiest Guy', Arial, sans-serif;
+  letter-spacing: 3px;
+  line-height: .9;
+  opacity: .85;
+  text-align: center;
+}
+
+.meltdown-text {
+  font-size: 84px;
+}
+
+.music-text {
+  font-size: 140px;
+}
+
+.records-gear {
+  color: var(--main-color);
+  font-family: 'Luckiest Guy', Arial, sans-serif;
+  font-size: 58px;
+  letter-spacing: 4px;
+  margin-top: 20px;
+  opacity: .85;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+/*  Section Container  */
+
+.section__container {
+  margin: 0 auto;
+  padding: 100px 0;
+  width: 100%;
+  max-width: 1000;
+}
+
+.store__img {
+  margin-top: 80px;
+  opacity: .75;
+  width: 100%;
+}
+
+.address__copy {
+  color: #fff;
+  font-family: 'American Typewriter', 'Copse', 'Luckiest Guy', Arial, sans-serif;
+  font-size: 36px;
+  letter-spacing: 1px;
+  margin-right: 70px;
+  opacity: .85;
+  text-align: right;
+  -webkit-transform: translateY(-106px);
+  transform: translateY(-106px);
+}
+
+.section__hours {
+  margin: 150px auto;
+  text-align: center;
+}
+
+.hours__container {-webkit-animation: Gradient 10s ease infinite;
+  animation: Gradient 10s ease infinite;
+  background: linear-gradient( to right bottom, rgba(111, 213, 191, 0.2), rgba(141, 235, 19, 0.1), rgba(39, 228, 39, 0.3));
+  background-position: top;
+  background-size: 400% 400%;
+  border-radius: 50%;
+  height: 440px;
+  width: 440px;
+}
+
+.hours__title {
+  color: var(--main-color);
+  display: block;
+  font-family: 'Luckiest Guy', Arial, sans-serif;
+  font-size: 78px;
+}
+
+.hours__copy {
+  font-family: 'Copse', 'American Typewriter', monospace;
+  font-size: 34px;
+  line-height: 2.1;
+}
+
+/*  Random Button Stuff  */
 
 .btn:link,
 .btn:visited {
