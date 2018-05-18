@@ -185,8 +185,8 @@ template {
 }
 
 body {
-  -webkit-animation: Gradient 10s ease infinite;
-  animation: Gradient 10s ease infinite;
+  -webkit-animation: Gradient 20s ease infinite;
+  animation: Gradient 20s ease infinite;
   background: linear-gradient(
     to left top,
     rgba(111, 213, 191, 0.4),
