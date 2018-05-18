@@ -152,8 +152,8 @@
 }
 
 .hours__container {
-  -webkit-animation: Gradient 10s ease infinite;
-  animation: Gradient 10s ease infinite;
+  -webkit-animation: GradientAlt 20s ease infinite;
+  animation: GradientAlt 20s ease infinite;
   background: linear-gradient( to right bottom, rgba(111, 213, 191, 0.2), rgba(141, 235, 19, 0.1), rgba(39, 228, 39, 0.3));
   background-position: top;
   background-size: 400% 400%;
