@@ -1,32 +1,3 @@
-function openNavMenu() {
-  console.log('Nav functionality coming soon!');
-}
-
-function getNavButtonOnMobile() {
-  window.matchMedia("(max-width: 700px)");
-}
-
-function getNavButton() {
-  if (window.pageYOffset >= 200) {
-    const elem = document.querySelector(".fixed__nav");
-    elem.style.opacity = 1;
-    elem.style.cursor = "pointer";
-    document.removeEventListener("scroll", getNavButton);
-    document.addEventListener("scroll", removeNavButton);
-  }
-}
-
-function removeNavButton() {
-  if (window.pageYOffset <= 200) {
-    const elem = document.querySelector(".fixed__nav");
-    elem.style.opacity = 0;
-    elem.style.cursor = "default";
-    document.removeEventListener("scroll", removeNavButton);
-    document.addEventListener("scroll", getNavButton);
-  }
-}
-
-document.addEventListener("scroll", getNavButton);
 
 function scrollToTop() {
   if (window.pageYOffset >= 200) {

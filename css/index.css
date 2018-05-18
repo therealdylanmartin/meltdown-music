@@ -36,7 +36,7 @@
 
 .meltdown-text,
 .music-text {
-  font-family: 'Bowlby One SC', 'Luckiest Guy', Arial, sans-serif;
+  font-family: var(--main-sans-font);
   letter-spacing: 3px;
   line-height: .9;
   opacity: .85;
@@ -53,7 +53,7 @@
 
 .records-gear {
   color: var(--main-color);
-  font-family: 'Luckiest Guy', Arial, sans-serif;
+  font-family: var(--secondary-sans-font);
   font-size: 58px;
   letter-spacing: 4px;
   margin-top: 20px;
@@ -91,7 +91,7 @@
 
 .store__copy {
   color: #fff;
-  font-family: 'American Typewriter', 'Copse', 'Luckiest Guy', Arial, sans-serif;
+  font-family: var(--type-font);
   font-size: 36px;
   letter-spacing: 1px;
   line-height: 1.3;
@@ -165,12 +165,12 @@
 .hours__title {
   color: var(--main-color);
   display: block;
-  font-family: 'Luckiest Guy', Arial, sans-serif;
+  font-family: var(--secondary-sans-font);
   font-size: 64px;
 }
 
 .hours__copy {
-  font-family: 'Copse', 'American Typewriter', monospace;
+  font-family: var(--subhead-font);
   font-size: 34px;
   line-height: 2.1;
 }

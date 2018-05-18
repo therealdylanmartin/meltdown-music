@@ -67,7 +67,7 @@
 
 .header__nav a {
   color: #000;
-  font-family: "Luckiest Guy", sans-serif;
+  font-family: var(--secondary-sans-font);
   letter-spacing: 1px;
   font-size: 28px;
   text-decoration: none;
