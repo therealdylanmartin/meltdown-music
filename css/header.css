@@ -1,8 +1,8 @@
 /*  Header Container  */
 
 .header {
-  -webkit-animation: Gradient 10s ease infinite;
-  animation: Gradient 10s ease infinite;
+  -webkit-animation: GradientAlt 30s ease infinite;
+  animation: GradientAlt 30s ease infinite;
   background: linear-gradient(
     to right bottom,
     rgba(111, 213, 191, 0.2),
@@ -16,6 +16,30 @@
   height: 200px;
   padding: 0 10px;
   position: relative;
+}
+
+@-webkit-keyframes GradientAlt {
+  0% {
+    background-position: 100% 75%;
+  }
+  50% {
+    background-position: 0 50%;
+  }
+  100% {
+    background-position: 100% 75%;
+  }
+}
+
+@keyframes GradientAlt {
+  0% {
+    background-position: 100% 75%;
+  }
+  50% {
+    background-position: 0 50%;
+  }
+  100% {
+    background-position: 100% 75%;
+  }
 }
 
 .header__logo {
@@ -43,7 +67,7 @@
 
 .header__nav a {
   color: #000;
-  font-family: "Luckiest Guy", sans-serif;
+  font-family: var(--secondary-sans-font);
   letter-spacing: 1px;
   font-size: 28px;
   text-decoration: none;

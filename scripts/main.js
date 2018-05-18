@@ -1,14 +1,7 @@
-function openNavMenu() {
-  console.log('Nav functionality coming soon!');
-}
-
-function getNavButtonOnMobile() {
-  window.matchMedia("(max-width: 700px)");
-}
 
 function getNavButton() {
   if (window.pageYOffset >= 200) {
-    const elem = document.querySelector(".fixed__nav");
+    const elem = document.querySelector(".nav__button");
     elem.style.opacity = 1;
     elem.style.cursor = "pointer";
     document.removeEventListener("scroll", getNavButton);
@@ -18,7 +11,7 @@ function getNavButton() {
 
 function removeNavButton() {
   if (window.pageYOffset <= 200) {
-    const elem = document.querySelector(".fixed__nav");
+    const elem = document.querySelector(".nav__button");
     elem.style.opacity = 0;
     elem.style.cursor = "default";
     document.removeEventListener("scroll", removeNavButton);
