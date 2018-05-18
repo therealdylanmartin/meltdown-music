@@ -60,13 +60,19 @@
   top: 50%;
   -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
+  transition: all 0.3s ease-in-out;
 }
 
 .nav__close {
   cursor: pointer;
   font-family: var(--type-font);
   font-size: 46px;
-  margin-left: 180px;
+  margin: 0 0 0 290px;
+  transition: all 0.3s ease-in-out;
+}
+
+.no-mt {
+  margin-top: 0;
 }
 
 .nav__link,
@@ -151,6 +157,9 @@
     -webkit-transform: translateX(450px);
     transform: translateX(450px);
   }
+  .nav__close {
+    margin-left: 190px;
+  }
   .nav__link,
   .nav__link:link,
   .nav__link:visited {
@@ -159,6 +168,9 @@
 }
 
 @media screen and (max-height: 700px) {
+  .nav__close {
+    margin-left: 190px;
+  }
   .nav__link,
   .nav__link:link,
   .nav__link:visited {
