@@ -59,6 +59,10 @@
   text-decoration: underline;
 }
 
+.header__nav a svg {
+  text-transform: lowercase;
+}
+
 .mobile-nav {
   display: none;
 }
