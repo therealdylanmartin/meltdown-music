@@ -80,7 +80,11 @@
 }
 
 .header__nav a.header__nav-disabled {
-  text-decoration: underline;
+  color: var(--secondary-color);
+}
+
+.header__nav a.header__nav-disabled:hover {
+  text-decoration: none;
 }
 
 .header__nav a svg {
