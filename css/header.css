@@ -76,11 +76,12 @@
 }
 
 .header__nav a:hover {
+  color: var(--main-color);
   text-decoration: underline;
 }
 
 .header__nav a.header__nav-disabled {
-  color: var(--secondary-color);
+  color: var(--main-color);
 }
 
 .header__nav a.header__nav-disabled:hover {
