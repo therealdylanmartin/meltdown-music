@@ -16,56 +16,47 @@
   height: 200px;
   padding: 0 10px;
   position: relative;
-}
-
-.header__logo {
-  height: 160px;
-  margin-top: 18px;
-}
-
-.header__nav {
-  margin: 0 auto;
-  max-width: 840px;
-}
-
-.header__nav ul {
-  align-items: center;
-  display: flex;
-  justify-content: space-around;
-  margin: 0 auto;
-  width: auto;
-}
-
-.header__nav li {
-  display: inline;
-  text-align: center;
-}
-
-.header__nav a {
-  color: #000;
-  font-family: var(--secondary-sans-font);
-  letter-spacing: 1px;
-  font-size: 28px;
-  text-decoration: none;
-  text-transform: uppercase;
-  transition: all 0.3s ease;
-}
-
-.header__nav a:hover {
-  color: var(--main-color);
-  text-decoration: underline;
-}
-
-.header__nav a.header__nav-disabled {
-  color: var(--main-color);
-}
-
-.header__nav a.header__nav-disabled:hover {
-  text-decoration: none;
-}
-
-.header__nav a svg {
-  text-transform: lowercase;
+  &__nav {
+    margin: 0 auto;
+    max-width: 840px;
+    & ul {
+      align-items: center;
+      display: flex;
+      justify-content: space-around;
+      margin: 0 auto;
+      width: auto;
+      & li {
+        display: inline;
+        text-align: center;
+        & a {
+          color: #000;
+          font-family: var(--secondary-sans-font);
+          letter-spacing: 1px;
+          font-size: 28px;
+          text-decoration: none;
+          text-transform: uppercase;
+          transition: all 0.3s ease;
+          & svg {
+            text-transform: lowercase;
+          }
+          &:hover {
+            color: var(--main-color);
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+    & a.header__nav--disabled {
+      color: var(--main-color);
+      &:hover {
+        text-decoration: none;
+      }
+    }
+  }
+  &--logo {
+    height: 160px;
+    margin-top: 18px;
+  }
 }
 
 .mobile-nav {
@@ -75,13 +66,13 @@
 @media screen and (max-width: 560px) {
   .header {
     height: 280px;
-  }
-  .header__logo {
-    height: 230px;
-  }
-  .header__nav a {
-    -webkit-box-flex: 1;
-    flex: 1;
+    &__nav a {
+      -webkit-box-flex: 1;
+      flex: 1;
+    }
+    &__nav--logo {
+      height: 230px;
+    }
   }
   .desktop-nav {
     display: none;
@@ -96,8 +87,8 @@
 @media screen and (max-width: 420px) {
   .header__nav li {
     display: none;
-  }
-  .header__nav li:nth-child(3) {
-    display: inline;
+    &:nth-child(3) {
+      display: inline;
+    }
   }
 }

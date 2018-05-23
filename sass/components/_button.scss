@@ -1,3 +1,66 @@
+/*  Round : Button  */
+
+.btn__round {
+  &:link,
+  &:visited {
+    background: rgba($color-white, 0.2);
+    border: 1px solid rgba(39, 228, 39, 0.5);
+    border-radius: 50%;
+    box-shadow: 0 1px 3px rgba($color-black, 0.2);
+    flex-wrap: wrap;
+    height: 50px;
+    justify-content: center;
+    opacity: 0;
+    outline: none;
+    position: fixed;
+    right: 15px;
+    transition: all 0.5s ease;
+    width: 50px;
+    z-index: 10;
+  }
+  &--nav {
+    top: 20px;
+    &--line-1,
+    &--line-2,
+    &--line-3 {
+      -webkit-animation: GradientAlt 5s ease infinite;
+      animation: GradientAlt 5s ease infinite;
+      background: linear-gradient(
+        to left top,
+        rgb(111, 213, 191),
+        rgb(39, 228, 39)
+      );
+      background-size: 600% 600%;
+      height: 3px;
+      margin: 3px auto 3px auto;
+      width: 30px;
+    }
+  }
+  &--scroll-top {
+    bottom: 20px;
+    &--triangle {
+      width: 20px;
+    }
+  }
+  &:hover {
+    box-shadow: 0 5px 10px rgba($color-black, 0.2);
+    -webkit-transform: translateY(-2px);
+    transform: translateY(-2px);
+  }
+  &:active {
+    box-shadow: 0 2px 5px rgba($color-black, 0.2);
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .btn__round {
+    cursor: pointer;
+    opacity: 1;
+  }
+}
+
 /*  White Button  */
 
 .btn {
