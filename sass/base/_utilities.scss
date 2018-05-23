@@ -2,7 +2,8 @@
 
 .u-flex,
 .u-flex-center,
-.u-flex-x {
+.u-flex-x,
+.u-flex-y {
   display: -webkit-flex;
   display: flex;
 }
@@ -19,6 +20,12 @@
   -webkit-flex: 1;
   flex: 1;
   justify-content: space-around;
+}
+
+.u-flex-y {
+  -webkit-align-content: space-around;
+  align-content: space-around;
+  justify-content: center;
 }
 
 /*  Floats  */

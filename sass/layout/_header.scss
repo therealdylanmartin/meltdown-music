@@ -19,16 +19,16 @@
   &__nav {
     margin: 0 auto;
     max-width: 840px;
-    & ul {
+    ul {
       align-items: center;
       display: flex;
       justify-content: space-around;
       margin: 0 auto;
       width: auto;
-      & li {
+      li {
         display: inline;
         text-align: center;
-        & a {
+        a {
           color: #000;
           font-family: var(--secondary-sans-font);
           letter-spacing: 1px;
@@ -36,7 +36,7 @@
           text-decoration: none;
           text-transform: uppercase;
           transition: all 0.3s ease;
-          & svg {
+          svg {
             text-transform: lowercase;
           }
           &:hover {
@@ -46,21 +46,20 @@
         }
       }
     }
-    & a.header__nav--disabled {
+    a.header__nav--disabled {
       color: var(--main-color);
       &:hover {
         text-decoration: none;
       }
     }
+    &--logo {
+      height: 160px;
+      margin-top: 18px;
+    }
+    &--mobile {
+      display: none;
+    }
   }
-  &--logo {
-    height: 160px;
-    margin-top: 18px;
-  }
-}
-
-.mobile-nav {
-  display: none;
 }
 
 @media screen and (max-width: 560px) {
@@ -73,22 +72,24 @@
     &__nav--logo {
       height: 230px;
     }
-  }
-  .desktop-nav {
-    display: none;
-  }
-  .mobile-nav {
-    display: flex;
-    justify-content: center;
-    margin-top: 20px;
+    &__nav--desktop {
+      display: none;
+    }
+    &__nav--mobile {
+      display: flex;
+      justify-content: center;
+      margin-top: 20px;
+    }
   }
 }
 
 @media screen and (max-width: 420px) {
-  .header__nav li {
-    display: none;
-    &:nth-child(3) {
-      display: inline;
+  .header__nav {
+    li {
+      display: none;
+      &:nth-child(3) {
+        display: inline;
+      }
     }
   }
 }

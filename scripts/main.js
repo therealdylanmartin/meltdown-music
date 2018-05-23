@@ -1,7 +1,7 @@
 
 function getNavButton() {
   if (window.pageYOffset >= 200) {
-    const elem = document.querySelector(".nav__button");
+    const elem = document.querySelector("#navBtn");
     elem.style.opacity = 1;
     elem.style.cursor = "pointer";
     document.removeEventListener("scroll", getNavButton);
@@ -11,7 +11,7 @@ function getNavButton() {
 
 function removeNavButton() {
   if (window.pageYOffset <= 200) {
-    const elem = document.querySelector(".nav__button");
+    const elem = document.querySelector("#navBtn");
     elem.style.opacity = 0;
     elem.style.cursor = "default";
     document.removeEventListener("scroll", removeNavButton);
@@ -33,7 +33,7 @@ function scrollToTop() {
 
 function getScrollButton() {
   if (window.pageYOffset >= 200) {
-    const elem = document.querySelector(".fixed__to-top");
+    const elem = document.querySelector("#toTopBtn");
     elem.style.opacity = 1;
     elem.style.cursor = "pointer";
     document.removeEventListener("scroll", getScrollButton);
@@ -43,7 +43,7 @@ function getScrollButton() {
 
 function removeScrollButton() {
   if (window.pageYOffset <= 200) {
-    const elem = document.querySelector(".fixed__to-top");
+    const elem = document.querySelector("#toTopBtn");
     elem.style.opacity = 0;
     elem.style.cursor = "default";
     document.removeEventListener("scroll", removeScrollButton);
