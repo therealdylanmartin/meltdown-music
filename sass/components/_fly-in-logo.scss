@@ -1,0 +1,72 @@
+/*  Fly-In Logo Header  */
+
+.fly-in__heading {
+  -webkit-animation: FlyIn 0.4s ease-in-out 0.3s;
+  animation: FlyIn 0.4s ease-in-out 0.3s;
+  -webkit-animation-fill-mode: backwards;
+  animation-fill-mode: backwards;
+  background: linear-gradient(
+    to left top,
+    rgba(111, 213, 191, 0.2),
+    rgba(141, 235, 19, 0.4),
+    rgba(39, 228, 39, 0.2)
+  );
+  background-size: 400% 400%;
+  border-radius: 20px;
+  padding: 40px 20px;
+  width: 600px;
+}
+
+.meltdown-text,
+.music-text {
+  font-family: var(--main-sans-font);
+  letter-spacing: 3px;
+  line-height: 0.9;
+  opacity: 0.85;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.meltdown-text {
+  font-size: 82px;
+}
+
+.music-text {
+  font-size: 136px;
+}
+
+.records-gear {
+  color: var(--main-color);
+  font-family: var(--secondary-sans-font);
+  font-size: 58px;
+  letter-spacing: 4px;
+  margin-top: 10px;
+  opacity: 0.85;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+@media screen and (max-width: 560px) {
+  .fly-in__heading {
+    width: 94%;
+  }
+  .meltdown-text {
+    font-size: 12.6vw;
+  }
+  .music-text {
+    font-size: 20vw;
+  }
+  .records-gear {
+    font-size: 8vw;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .fly-in__heading {
+    background: rgba(0, 0, 0, 0);
+    padding: 20px 20px;
+  }
+  .records-gear {
+    margin-top: 0;
+  }
+}

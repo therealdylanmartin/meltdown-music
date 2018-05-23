@@ -1,21 +1,20 @@
 /*  Variables  */
 
 :root {
-    --main-color: #55c57a;
-    --secondary-color: #75bf43;
-    --main-sans-font: "Bowlby One", "Luckiest Guy", "American Typewriter", Arial, sans-serif;
-    --secondary-sans-font: "Luckiest Guy", sans-serif;
-    --subhead-font: "Copse", "American Typewriter", monospace;
-    --type-font: "American Typewriter", "Copse", "Luckiest Guy", Arial, sans-serif;
-    --main-copy-font: "Baskerville", Arial, sans-serif;
-  }
+  --main-color: #4ea81e;
+  --secondary-color: #75bf43;
+  --main-sans-font: "Bowlby One", "Luckiest Guy", "American Typewriter", Arial, sans-serif;
+  --secondary-sans-font: "Luckiest Guy", sans-serif;
+  --subhead-font: "Copse", "American Typewriter", monospace;
+  --type-font: "American Typewriter", "Copse", "Luckiest Guy", Arial, sans-serif;
+  --main-copy-font: "Baskerville", Arial, sans-serif;
+}
 
 /*  Colors  */
 
-$color-primary-test: var(--main-color);
-$color-primary-test-light: lighten(var(--main-color), 60%);
-$color-primary-test-dark: darken(var(--main-color), 60%);
-
+$color-primary-test: #55c57a;
+$color-primary-test-light: lighten($color-primary-test, 60%);
+$color-primary-test-dark: darken($color-primary-test, 60%);
 
 $color-primary: #55c57a;
 $color-primary-light: #7ed56f;
