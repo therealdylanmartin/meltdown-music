@@ -1,0 +1,36 @@
+/*  Photo Selector  */
+
+.composition {
+    position: relative;
+    &__photo {
+        border-radius: .2rem;
+        box-shadow: 0 1.5rem 4rem rgba($color-black, .4);
+        outline-offset: 2rem;
+        position: absolute;
+        transition: all .2s;
+        width: 55%;
+        &--p1 {
+            left: 0;
+            top: -2rem;
+        }
+        &--p2 {
+            right: 0;
+            top: 2rem;
+        }
+        &--p3 {
+            left: 20%;
+            top: 10rem;
+        }
+        &:hover {
+            box-shadow: 0 2.5rem 4rem rgba($color-black, .5);
+            outline: 1.5rem solid $color-primary;
+            -webkit-transform: scale(1.05);
+            transform: scale(1.05);
+            z-index: 2;
+        }
+    }
+    &:hover &__photo:not(:hover) {
+        -webkit-transform: scale(.95);
+        transform: scale(.95);
+    }
+}

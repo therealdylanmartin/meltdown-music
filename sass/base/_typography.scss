@@ -1,0 +1,67 @@
+/*  Default Type Settings  */
+
+body {
+    color: $color-gray-dark;
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    line-height: 1.7;
+}
+
+/*  Primary Heading  */
+
+.heading-primary {
+    backface-visibility: hidden;
+    color: $color-white;
+    text-transform: uppercase;
+    &--main {
+        animation: moveInLeft 0.7s ease-out;
+        display: block;
+        font-size: 6rem;
+        font-weight: 400;
+        letter-spacing: 3.5rem;
+    }
+    &--sub {
+        animation: moveInRight 0.7s ease-out;
+        display: block;
+        font-size: 2rem;
+        font-weight: 700;
+        letter-spacing: 1.75rem;
+    }
+}
+
+/*  Secondary Heading */
+
+.heading-secondary {
+    background-image: linear-gradient(to right, $color-primary-light, $color-primary-dark);
+    color: transparent;
+    display: inline-block;
+    -webkit-background-clip: text;
+    background-clip: text;
+    font-size: 3.5rem;
+    font-weight: 700;
+    letter-spacing: .2rem;
+    text-transform: uppercase;
+    transition: all .2s;
+    &:hover {
+        text-shadow: .5rem 1rem 2rem rgba($color-black, .2);
+        -webkit-transform: skewY(2deg) skewX(15deg) scale(1.1);
+        transform: skewY(2deg) skewX(15deg) scale(1.1);
+    }
+}
+
+/*  Tertiary Heading  */
+
+.heading-tertiary {
+    font-size: $default-font-size;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+/*  General Copy  */
+
+.paragraph {
+    font-size: $default-font-size;
+    &:not(:last-child) {
+        margin-bottom: 3rem;
+    }
+}

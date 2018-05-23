@@ -1,0 +1,57 @@
+/*  Variables  */
+
+:root {
+    --main-color: #55c57a;
+    --secondary-color: #75bf43;
+    --main-sans-font: "Bowlby One", "Luckiest Guy", "American Typewriter", Arial, sans-serif;
+    --secondary-sans-font: "Luckiest Guy", sans-serif;
+    --subhead-font: "Copse", "American Typewriter", monospace;
+    --type-font: "American Typewriter", "Copse", "Luckiest Guy", Arial, sans-serif;
+    --main-copy-font: "Baskerville", Arial, sans-serif;
+  }
+
+/*  Colors  */
+
+$color-primary-test: var(--main-color);
+$color-primary-test-light: lighten(var(--main-color), 60%);
+$color-primary-test-dark: darken(var(--main-color), 60%);
+
+
+$color-primary: #55c57a;
+$color-primary-light: #7ed56f;
+$color-primary-dark: #28b485;
+
+$color-secondary-light: #ffb900;
+$color-secondary-dark: #ff7730;
+
+$color-tertiary-light: #2998ff;
+$color-tertiary-dark: #5643fa;
+
+$color-grey-light-1: #d7d7d7;
+$color-grey-light-2: #8e8e8e;
+$color-gray-dark: #535353;
+
+$color-white: #fff;
+$color-black: #000;
+
+$color-gradient-1: #6fd5bf;
+$color-gradient-2: #8deb13;
+$color-gradient-3: #27e427;
+
+/*  Font  */
+
+$default-font-size: 1.6rem;
+
+/*  Grid  */
+
+$grid-width: 100%;
+$gutter-y: 7rem;
+$gutter-x: 5rem;
+
+/*  Measurement Units  */
+
+$unit-xs: .5rem;
+$unit-sm: 1.2rem;
+$unit-md: 4rem;
+$unit-lg: 8rem;
+$unit-xl: 12rem;
