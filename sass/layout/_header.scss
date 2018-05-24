@@ -16,6 +16,9 @@
   height: 200px;
   padding: 0 10px;
   position: relative;
+  @media screen and (max-width: 560px) {
+    height: 280px;
+  }
   &__nav {
     margin: 0 auto;
     max-width: 840px;
@@ -28,20 +31,32 @@
       li {
         display: inline;
         text-align: center;
+        @media screen and (max-width: 420px) {
+          display: none;
+        }
+        &:nth-child(3) {
+          @media screen and (max-width: 420px) {
+            display: inline;
+          }
+        }
         a {
           color: #000;
-          font-family: var(--secondary-sans-font);
+          font-family: $font-sans-secondary;
           letter-spacing: 1px;
           font-size: 28px;
           text-decoration: none;
           text-transform: uppercase;
           transition: all 0.3s ease;
-          svg {
-            text-transform: lowercase;
+          @media screen and (max-width: 560px) {
+            -webkit-box-flex: 1;
+            flex: 1;
           }
           &:hover {
             color: var(--main-color);
             text-decoration: underline;
+          }
+          svg {
+            text-transform: lowercase;
           }
         }
       }
@@ -55,40 +70,21 @@
     &--logo {
       height: 160px;
       margin-top: 18px;
+      @media screen and (max-width: 560px) {
+        height: 230px;
+      }
     }
     &--mobile {
       display: none;
+      @media screen and (max-width: 560px) {
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+      }
     }
-  }
-}
-
-@media screen and (max-width: 560px) {
-  .header {
-    height: 280px;
-    &__nav a {
-      -webkit-box-flex: 1;
-      flex: 1;
-    }
-    &__nav--logo {
-      height: 230px;
-    }
-    &__nav--desktop {
-      display: none;
-    }
-    &__nav--mobile {
-      display: flex;
-      justify-content: center;
-      margin-top: 20px;
-    }
-  }
-}
-
-@media screen and (max-width: 420px) {
-  .header__nav {
-    li {
-      display: none;
-      &:nth-child(3) {
-        display: inline;
+    &--desktop {
+      @media screen and (max-width: 560px) {
+        display: none;
       }
     }
   }

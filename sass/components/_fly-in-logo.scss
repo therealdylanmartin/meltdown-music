@@ -15,58 +15,51 @@
   border-radius: 20px;
   padding: 40px 20px;
   width: 600px;
-}
-
-.meltdown-text,
-.music-text {
-  font-family: var(--main-sans-font);
-  letter-spacing: 3px;
-  line-height: 0.9;
-  opacity: 0.85;
-  text-align: center;
-  text-transform: uppercase;
-}
-
-.meltdown-text {
-  font-size: 82px;
-}
-
-.music-text {
-  font-size: 136px;
-}
-
-.records-gear {
-  color: var(--main-color);
-  font-family: var(--secondary-sans-font);
-  font-size: 58px;
-  letter-spacing: 4px;
-  margin-top: 10px;
-  opacity: 0.85;
-  text-align: center;
-  text-transform: uppercase;
-}
-
-@media screen and (max-width: 560px) {
-  .fly-in__heading {
+  @media screen and (max-width: 560px) {
     width: 94%;
   }
-  .meltdown-text {
-    font-size: 12.6vw;
-  }
-  .music-text {
-    font-size: 20vw;
-  }
-  .records-gear {
-    font-size: 8vw;
-  }
-}
-
-@media screen and (max-width: 420px) {
-  .fly-in__heading {
+  @media screen and (max-width: 420px) {
     background: rgba(0, 0, 0, 0);
     padding: 20px 20px;
   }
-  .records-gear {
-    margin-top: 0;
+  &--text-meltdown,
+  &--text-music {
+    color: $color-black;
+    font-family: $font-sans-primary;
+    letter-spacing: 3px;
+    line-height: 0.9;
+    opacity: .85;
+    text-align: center;
+    text-transform: uppercase;
+  }
+  &--text-meltdown {
+    font-size: 82px;
+    margin-left: 8px;
+    @media screen and (max-width: 560px) {
+      font-size: 12.6vw;
+    }
+  }
+  &--text-music {
+    font-size: 136px;
+    @media screen and (max-width: 560px) {
+      font-size: 20vw;
+    }
+  }
+  &--text-records-gear {
+    color: var(--main-color);
+    font-family: $font-sans-secondary;
+    font-size: 58px;
+    letter-spacing: 4px;
+    margin-bottom: -24px;
+    margin-top: 10px;
+    opacity: 0.85;
+    text-align: center;
+    text-transform: uppercase;
+    @media screen and (max-width: 560px) {
+      font-size: 8vw;
+    }
+    @media screen and (max-width: 420px) {
+      margin-top: 0;
+    }
   }
 }

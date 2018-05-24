@@ -3,11 +3,6 @@
 :root {
   --main-color: #4ea81e;
   --secondary-color: #75bf43;
-  --main-sans-font: "Bowlby One", "Luckiest Guy", "American Typewriter", Arial, sans-serif;
-  --secondary-sans-font: "Luckiest Guy", sans-serif;
-  --subhead-font: "Copse", "American Typewriter", monospace;
-  --type-font: "American Typewriter", "Copse", "Luckiest Guy", Arial, sans-serif;
-  --main-copy-font: "Baskerville", Arial, sans-serif;
 }
 
 /*  Colors  */
@@ -39,7 +34,14 @@ $color-gradient-3: #27e427;
 
 /*  Font  */
 
-$default-font-size: 1.6rem;
+
+$font-sans-primary: "Bowlby One", "Luckiest Guy", "American Typewriter", Arial, sans-serif;
+$font-sans-secondary: "Luckiest Guy", sans-serif;
+$font-sub-heading: "Copse", "American Typewriter", monospace;
+$font-type: "American Typewriter", "Copse", "Luckiest Guy", Arial, sans-serif;
+$font-copy: "Baskerville", Arial, sans-serif;
+
+$font-size-default: 1.6rem;
 
 /*  Grid  */
 

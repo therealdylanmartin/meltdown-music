@@ -25,6 +25,8 @@
 .u-flex-y {
   -webkit-align-content: space-around;
   align-content: space-around;
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
   justify-content: center;
 }
 
