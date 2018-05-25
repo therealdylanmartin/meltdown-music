@@ -285,7 +285,7 @@ body {
     transition: all 0.3s ease-in-out; }
     .fixed-nav__fs--list--close {
       cursor: pointer;
-      font-family: var(--type-font);
+      font-family: "American Typewriter", "Copse", "Luckiest Guy", Arial, sans-serif;
       font-size: 4.6rem;
       margin: 0 0 0 29rem;
       transition: all 0.3s ease-in-out; }
@@ -301,7 +301,7 @@ body {
       background: linear-gradient(120deg, rgba(138, 230, 76, 0) 0%, rgba(40, 226, 90, 0) 50%, #fff 50%);
       background-size: 240%;
       border-radius: 20px;
-      font-family: var(--main-sans-font);
+      font-family: "Bowlby One", "Luckiest Guy", "American Typewriter", Arial, sans-serif;
       color: #fff;
       font-size: 56px;
       letter-spacing: 3px;
@@ -375,105 +375,112 @@ body {
       .fly-in__heading--text-records-gear {
         margin-top: 0; } }
 
-/*  Interior Store Image  */
-.store-img__mobile-only {
-  display: none; }
-
-.store__copy {
-  color: #fff;
-  font-family: var(--type-font);
-  font-size: 36px;
-  letter-spacing: 1px;
-  line-height: 1.3;
-  margin-right: 70px;
-  opacity: 0.85;
-  text-align: right;
-  -webkit-transform: translateY(-114px);
-  transform: translateY(-114px); }
-
-.store__mobile-only {
-  display: none; }
-
-@media screen and (max-width: 788px) {
-  .store__copy {
-    margin-right: 50px;
-    -webkit-transform: translateY(-160px);
-    transform: translateY(-160px); }
-  .store__desktop-only {
+/*  Store : Interior Image & Address Info  */
+.store__img {
+  /*  Mobile Only Image  */
+  /*  Desktop Only Image  */
+  /*  Address & Phone Number  */ }
+  .store__img-mobile {
     display: none; }
-  .store__mobile-only {
-    display: inline; } }
+    @media screen and (max-width: 560px) {
+      .store__img-mobile {
+        display: block; } }
+  @media screen and (max-width: 560px) {
+    .store__img-desktop {
+      display: none; } }
+  .store__img--text {
+    color: #fff;
+    font-family: "American Typewriter", "Copse", "Luckiest Guy", Arial, sans-serif;
+    font-size: 36px;
+    letter-spacing: 1px;
+    line-height: 1.3;
+    margin-right: 70px;
+    opacity: 0.85;
+    text-align: right;
+    -webkit-transform: translateY(-114px);
+    transform: translateY(-114px);
+    /*  Mobile Only <br /> Tag  */
+    /*  Desktop Only "|" Character  */ }
+    @media screen and (max-width: 788px) {
+      .store__img--text {
+        margin-right: 50px;
+        -webkit-transform: translateY(-160px);
+        transform: translateY(-160px); } }
+    @media screen and (max-width: 560px) {
+      .store__img--text {
+        font-size: 32px;
+        opacity: 1;
+        -webkit-transform: translateY(-140px);
+        transform: translateY(-140px); } }
+    @media screen and (max-width: 420px) {
+      .store__img--text {
+        font-size: 7vw;
+        margin-right: 20px;
+        -webkit-transform: translateY(-120px);
+        transform: translateY(-120px); } }
+    .store__img--text-mobile {
+      display: none; }
+      @media screen and (max-width: 788px) {
+        .store__img--text-mobile {
+          display: inline; } }
+    @media screen and (max-width: 788px) {
+      .store__img--text-desktop {
+        display: none; } }
 
-@media screen and (max-width: 560px) {
-  .store-img__mobile-only {
-    display: block; }
-  .store-img__desktop-only {
-    display: none; }
-  .store__copy {
-    font-size: 32px;
-    opacity: 1;
-    -webkit-transform: translateY(-140px);
-    transform: translateY(-140px); } }
+/*  Store : Hours Open  */
+.store__hours {
+  margin: 12rem auto calc(12rem* 2);
+  text-align: center;
+  /*  Round Container  */ }
+  .store__hours--box {
+    -webkit-animation: GradientAlt 20s ease infinite;
+    animation: GradientAlt 20s ease infinite;
+    background: linear-gradient(to right bottom, rgba(111, 213, 191, 0.2), rgba(141, 235, 19, 0.1), rgba(39, 228, 39, 0.3));
+    background-position: top;
+    background-size: 400% 400%;
+    border-radius: 50%;
+    height: 440px;
+    width: 440px;
+    /*  Title : Hours  */
+    /*  Hours Open  */ }
+    @media screen and (max-width: 560px) {
+      .store__hours--box {
+        height: 420px;
+        width: 420px; } }
+    @media screen and (max-width: 420px) {
+      .store__hours--box {
+        height: 90vw;
+        width: 90vw; } }
+    .store__hours--box-title {
+      color: var(--main-color);
+      display: block;
+      font-family: "Luckiest Guy", sans-serif;
+      font-size: 64px; }
+      @media screen and (max-width: 420px) {
+        .store__hours--box-title {
+          font-size: 14vw; } }
+    .store__hours--box-text {
+      font-family: "Copse", "American Typewriter", monospace;
+      font-size: 34px;
+      line-height: 2.1; }
+      @media screen and (max-width: 420px) {
+        .store__hours--box-text {
+          font-size: 7vw; } }
 
-@media screen and (max-width: 420px) {
-  .store__copy {
-    font-size: 7vw;
-    margin-right: 20px;
-    -webkit-transform: translateY(-120px);
-    transform: translateY(-120px); } }
-
-/*  Store Hours  */
-.section__hours {
-  margin: 100px auto 200px;
-  text-align: center; }
-
-.hours__container {
-  -webkit-animation: GradientAlt 20s ease infinite;
-  animation: GradientAlt 20s ease infinite;
-  background: linear-gradient(to right bottom, rgba(111, 213, 191, 0.2), rgba(141, 235, 19, 0.1), rgba(39, 228, 39, 0.3));
-  background-position: top;
-  background-size: 400% 400%;
-  border-radius: 50%;
-  height: 440px;
-  width: 440px; }
-
-.hours__title {
-  color: var(--main-color);
-  display: block;
-  font-family: var(--secondary-sans-font);
-  font-size: 64px; }
-
-.hours__copy {
-  font-family: var(--subhead-font);
-  font-size: 34px;
-  line-height: 2.1; }
-
-@media screen and (max-width: 560px) {
-  .hours__container {
-    height: 420px;
-    width: 420px; } }
-
-@media screen and (max-width: 420px) {
-  .hours__container {
-    height: 90vw;
-    width: 90vw; }
-  .hours__title {
-    font-size: 14vw; }
-  .hours__copy {
-    font-size: 7vw; } }
-
-/*  Exterior Store Image & Map  */
-.map__store-img-box {
-  width: 43.35%; }
-
-.map__img-box {
-  width: 56.65%; }
-
-@media screen and (max-width: 560px) {
-  .map__store-img-box {
-    width: 100%; }
-  .map__img-box {
-    width: 100%; } }
+/*  Store : Image & Google Map API  */
+.store__map--box {
+  /*  STore Image : Exterior  */
+  /*  Google Map Box  */ }
+  .store__map--box-img-1 {
+    width: 43.35%; }
+    @media screen and (max-width: 560px) {
+      .store__map--box-img-1 {
+        width: 100%; } }
+  .store__map--box-img-2 {
+    width: 56.65%; }
+    @media screen and (max-width: 560px) {
+      .store__map--box-img-2 {
+        width: 100%; } }
 
 /*  Round : Button  */
 .btn__round,
@@ -683,8 +690,8 @@ body {
   justify-content: space-around; }
 
 .u-flex-y {
-  -webkit-align-content: space-around;
-  align-content: space-around;
+  -webkit-align-content: center;
+  align-content: center;
   -webkit-flex-wrap: wrap;
   flex-wrap: wrap;
   justify-content: center; }
