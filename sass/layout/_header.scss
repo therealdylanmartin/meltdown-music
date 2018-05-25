@@ -1,0 +1,91 @@
+/*  Header  */
+
+.header {
+  -webkit-animation: GradientAlt 30s ease infinite;
+  animation: GradientAlt 30s ease infinite;
+  background: linear-gradient(
+    to right bottom,
+    rgba(111, 213, 191, 0.2),
+    rgba(141, 235, 19, 0.4),
+    rgba(39, 228, 39, 0.2)
+  );
+  background-position: top;
+  background-size: 400% 400%;
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 70%, 50% 100%, 0 70%);
+  clip-path: polygon(0 0, 100% 0, 100% 70%, 50% 100%, 0 70%);
+  height: 200px;
+  padding: 0 10px;
+  position: relative;
+  @media screen and (max-width: 560px) {
+    height: 280px;
+  }
+  &__nav {
+    margin: 0 auto;
+    max-width: 840px;
+    ul {
+      align-items: center;
+      display: flex;
+      justify-content: space-around;
+      margin: 0 auto;
+      width: auto;
+      li {
+        display: inline;
+        text-align: center;
+        @media screen and (max-width: 420px) {
+          display: none;
+        }
+        &:nth-child(3) {
+          @media screen and (max-width: 420px) {
+            display: inline;
+          }
+        }
+        a {
+          color: #000;
+          font-family: $font-sans-secondary;
+          letter-spacing: 1px;
+          font-size: 28px;
+          text-decoration: none;
+          text-transform: uppercase;
+          transition: all 0.3s ease;
+          @media screen and (max-width: 560px) {
+            -webkit-box-flex: 1;
+            flex: 1;
+          }
+          &:hover {
+            color: $color-primary;
+            text-decoration: underline;
+          }
+          svg {
+            text-transform: lowercase;
+          }
+        }
+      }
+    }
+    a.header__nav--disabled {
+      color: $color-primary;
+      &:hover {
+        text-decoration: none;
+      }
+    }
+    &--logo {
+      height: 160px;
+      margin-top: 18px;
+      @media screen and (max-width: 560px) {
+        height: 230px;
+      }
+    }
+    &--mobile {
+      display: none;
+      @media screen and (max-width: 560px) {
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+      }
+    }
+    &--desktop {
+      @media screen and (max-width: 560px) {
+        display: none;
+      }
+    }
+  }
+}

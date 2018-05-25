@@ -1,0 +1,131 @@
+/*  Store : Interior Image & Address Info  */
+
+.store__img {
+  /*  Mobile Only Image  */
+  &-mobile {
+    display: none;
+    @media screen and (max-width: 560px) {
+      display: block;
+    }
+  }
+  /*  Desktop Only Image  */
+  &-desktop {
+    @media screen and (max-width: 560px) {
+      display: none;
+    }
+  }
+  /*  Address & Phone Number  */
+  &--text {
+    color: #fff;
+    font-family: $font-type;
+    font-size: 36px;
+    letter-spacing: 1px;
+    line-height: 1.3;
+    margin-right: 70px;
+    opacity: 0.85;
+    text-align: right;
+    -webkit-transform: translateY(-114px);
+    transform: translateY(-114px);
+    @media screen and (max-width: 788px) {
+      margin-right: 50px;
+      -webkit-transform: translateY(-160px);
+      transform: translateY(-160px);
+    }
+    @media screen and (max-width: 560px) {
+      font-size: 32px;
+      opacity: 1;
+      -webkit-transform: translateY(-140px);
+      transform: translateY(-140px);
+    }
+    @media screen and (max-width: 420px) {
+      font-size: 7vw;
+      margin-right: 20px;
+      -webkit-transform: translateY(-120px);
+      transform: translateY(-120px);
+    }
+    /*  Mobile Only <br /> Tag  */
+    &-mobile {
+      display: none;
+      @media screen and (max-width: 788px) {
+        display: inline;
+      }
+    }
+    /*  Desktop Only "|" Character  */
+    &-desktop {
+      @media screen and (max-width: 788px) {
+        display: none;
+      }
+    }
+  }
+}
+
+/*  Store : Hours Open  */
+
+.store__hours {
+  margin: $unit-xl auto calc(#{$unit-xl}* 2);
+  text-align: center;
+  /*  Round Container  */
+  &--box {
+    -webkit-animation: GradientAlt 20s ease infinite;
+    animation: GradientAlt 20s ease infinite;
+    background: linear-gradient(
+      to right bottom,
+      rgba(111, 213, 191, 0.2),
+      rgba(141, 235, 19, 0.1),
+      rgba(39, 228, 39, 0.3)
+    );
+    background-position: top;
+    background-size: 400% 400%;
+    border-radius: 50%;
+    height: 440px;
+    width: 440px;
+    @media screen and (max-width: 560px) {
+      height: 420px;
+      width: 420px;
+    }
+    @media screen and (max-width: 420px) {
+      height: 90vw;
+      width: 90vw;
+    }
+    /*  Title : Hours  */
+    &-title {
+      color: $color-primary;
+      display: block;
+      font-family: $font-sans-secondary;
+      font-size: 64px;
+      @media screen and (max-width: 420px) {
+        font-size: 14vw;
+      }
+    }
+    /*  Hours Open  */
+    &-text {
+      font-family: $font-sub-heading;
+      font-size: 34px;
+      line-height: 2.1;
+      @media screen and (max-width: 420px) {
+        font-size: 7vw;
+      }
+    }
+  }
+}
+
+/*  Store : Image & Google Map API  */
+
+.store__map {
+  &--box {
+    /*  STore Image : Exterior  */
+    &-img-1 {
+      width: 43.35%;
+      @media screen and (max-width: 560px) {
+        width: 100%;
+      }
+    }
+    /*  Google Map Box  */
+    &-img-2 {
+      width: 56.65%;
+      @media screen and (max-width: 560px) {
+        width: 100%;
+      }
+    }
+  }
+}

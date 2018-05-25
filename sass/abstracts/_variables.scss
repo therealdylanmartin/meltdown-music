@@ -1,0 +1,48 @@
+/*  Variables  */
+
+:root {
+  --main-color: #4ea81e;
+  --secondary-color: #75bf43;
+}
+
+/*  Colors  */
+
+$color-primary: #55c57a;
+$color-primary-light: #75bf43;
+$color-primary-dark: darken($color-primary, 60%);
+
+$color-secondary-light: #ffb900;
+$color-secondary-dark: #ff7730;
+
+$color-tertiary-light: #2998ff;
+$color-tertiary-dark: #5643fa;
+
+$color-grey-light-1: #d7d7d7;
+$color-grey-light-2: #8e8e8e;
+$color-gray-dark: #535353;
+
+$color-white: #fff;
+$color-black: #000;
+
+$color-gradient-1: #6fd5bf;
+$color-gradient-2: #8deb13;
+$color-gradient-3: #27e427;
+
+/*  Font  */
+
+
+$font-sans-primary: "Bowlby One", "Luckiest Guy", "American Typewriter", Arial, sans-serif;
+$font-sans-secondary: "Luckiest Guy", sans-serif;
+$font-sub-heading: "Copse", "American Typewriter", monospace;
+$font-type: "American Typewriter", "Copse", "Luckiest Guy", Arial, sans-serif;
+$font-copy: "Baskerville", Arial, sans-serif;
+
+$font-size-default: 1.6rem;
+
+/*  Measurement Units  */
+
+$unit-xs: 1rem;
+$unit-sm: 2rem;
+$unit-md: 4rem;
+$unit-lg: 8rem;
+$unit-xl: 12rem;

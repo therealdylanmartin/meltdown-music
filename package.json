@@ -1,0 +1,23 @@
+{
+  "name": "meltdown-music_dylans-branch",
+  "version": "1.0.0",
+  "description": "Meltdown Music : Records + Gear",
+  "main": "index.js",
+  "scripts": {
+    "test": "test",
+    "sass": "node-sass sass/main.scss css/main.css -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/therealdylanmartin/meltdown-music.git"
+  },
+  "author": "Dylan Martin & Tyler Debelak",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/therealdylanmartin/meltdown-music/issues"
+  },
+  "homepage": "https://github.com/therealdylanmartin/meltdown-music#readme",
+  "devDependencies": {
+    "node-sass": "^4.9.0"
+  }
+}

@@ -7,47 +7,41 @@
 
     <link href="https://fonts.googleapis.com/css?family=Bowlby+One|Bowlby+One+SC|Copse|Luckiest+Guy" rel="stylesheet">
 
-    <link rel="stylesheet" href="css/variables.css">
-    <link rel="stylesheet" href="css/global.css">
-    <link rel="stylesheet" href="css/header.css">
-    <link rel="stylesheet" href="css/footer.css">
-    <link rel="stylesheet" href="css/fixed-nav.css">
+    <link rel="stylesheet" href="css/main.css">
 
     <link rel="shortcut icon" type="image/png" href="img/favicon.ico">
     <link rel="icon" type="image/png" href="img/favicon-32x32.png" sizes="32x32" />
     <link rel="icon" type="image/png" href="img/favicon-16x16.png" sizes="16x16" />
 
 
-    <title>Meltdown Music | Used Instruments &amp; Audio Gear</title>
+    <title>Meltdown Music : Records &amp; Gear</title>
 </head>
 
 <body id="homepage">
 
-    <section class="fixed__container">
+    <section class="fixed-nav">
 
-        <input class="nav__checkbox" type="checkbox" id="navToggle" />
+        <input class="fixed-nav__toggle" type="checkbox" id="navToggle" />
 
-        <label class="nav__button" title="Show Menu" for="navToggle">
+        <label class="btn__round--nav btn__round u-flex-y" id="navBtn" title="Show Menu" for="navToggle">
 
-            <div class="menu-line"></div>
-            <div class="menu-line"></div>
-            <div class="menu-line"></div>
+            <div class="btn__round--nav--line-1"></div>
+            <div class="btn__round--nav--line-2"></div>
+            <div class="btn__round--nav--line-3"></div>
 
         </label>
 
-        <div class="nav__bg"></div>
+        <nav class="fixed-nav__fs">
 
-        <nav class="nav__fs">
-
-            <ul class="nav__list">
+            <ul class="fixed-nav__fs--list">
                 <li>
-                    <label class="nav__close white-text" for="navToggle" title="Hide Menu">
+                    <label class="fixed-nav__fs--list--close u-text-white" for="navToggle" title="Hide Menu">
                         x
                     </label>
                 </li>
                 <li>
                     <a href="index.html" title="Homepage">
-                        <svg class="header__logo no-mt" xmlns="http://www.w3.org/2000/svg" id="Layer_1" data-name="Layer 1" viewBox="0 0 492.8 639.11">
+                        <svg class="fixed-nav__fs--list--logo" xmlns="http://www.w3.org/2000/svg" id="Layer_1" data-name="Layer 1" viewBox="0 0 492.8 639.11">
                             <defs>
                                 <style>
                                     .cls-0 {
@@ -132,22 +126,22 @@
                     </a>
                 </li>
                 <li>
-                    <a class="nav__link" href="records.html" title="Used Records">
+                    <a class="fixed-nav__fs--list--link" href="records.html" title="Used Records">
                         Records
                     </a>
                 </li>
                 <li>
-                    <a class="nav__link" href="gear.html" title="Used Instruments &amp; Audio Gear">
+                    <a class="fixed-nav__fs--list--link" href="gear.html" title="Used Instruments &amp; Audio Gear">
                         Gear
                     </a>
                 </li>
                 <li>
-                    <a class="nav__link" href="events.html" title="Upcoming Events">
+                    <a class="fixed-nav__fs--list--link" href="events.html" title="Upcoming Events">
                         Events
                     </a>
                 </li>
                 <li>
-                    <a class="nav__link" href="about.html" title="Location, Hours, Consignment Info">
+                    <a class="fixed-nav__fs--list--link" href="about.html" title="Location, Hours, Consignment Info">
                         About
                     </a>
                 </li>
@@ -155,9 +149,9 @@
         </nav>
 
 
-        <button class="fixed__to-top" onclick="scrollToTop()" title="Back to Top" id="topButton">
+        <button class="btn__round--scroll-top btn__round u-flex-center" id="toTopBtn" onclick="scrollToTop()" title="Back to Top">
 
-            <svg xmlns="http://www.w3.org/2000/svg" class="triangle" id="Layer_1" data-name="Layer 1" viewBox="0 0 200 168.62">
+            <svg xmlns="http://www.w3.org/2000/svg" class="btn__round--scroll-top--triangle" id="Layer_1" data-name="Layer 1" viewBox="0 0 200 168.62">
                 <defs>
                     <style>
                         .cls-1 {
@@ -165,9 +159,7 @@
                         }
                     </style>
                 </defs>
-                <title>
-                    Triangle Shape
-                </title>
+                <title>Triangle Shape</title>
                 <polygon points="96.37 2.36 143.82 84.54 191.26 166.72 96.37 166.72 1.48 166.72 48.92 84.54 96.37 2.36" class="cls-1" />
             </svg>
 
@@ -181,14 +173,14 @@
             <ul>
                 <li>
                     <a href="records.html" title="Records">Records</a>
-                    <a class="header__nav-disabled mobile-nav" disabled="disabled" title="Gear">Gear</a>
+                    <a class="header__nav--mobile header__nav--disabled" title="Gear" disabled>Gear</a>
                 </li>
                 <li>
-                    <a class="header__nav-disabled desktop-nav" disabled="disabled" title="Gear">Gear</a>
+                    <a class="header__nav--desktop header__nav--disabled" title="Gear" disabled>Gear</a>
                 </li>
                 <li>
-                    <a href="index.html" title="Meltdown Music">
-                        <svg class="header__logo" xmlns="http://www.w3.org/2000/svg" id="Layer_1" data-name="Layer 1" viewBox="0 0 492.8 639.11">
+                    <a href="index.html" title="Homepage">
+                        <svg class="header__nav--logo" xmlns="http://www.w3.org/2000/svg" id="Layer_1" data-name="Layer 1" viewBox="0 0 492.8 639.11">
                             <defs>
                                 <style>
                                     .cls-0 {
@@ -213,9 +205,7 @@
                                     }
                                 </style>
                             </defs>
-                            <title>
-                                Meltdown Music Logo
-                            </title>
+                            <title>Meltdown Music Logo</title>
                             <path d="M176.23,444.33a182.45,182.45,0,0,1-31.31-102.5c0-101.26,82.08-183.34,183.33-183.34s183.33,82.08,183.33,183.34a182.68,182.68,0,0,1-15.28,73.39S469.65,466,473.66,518.46c1.31,17.17-5.21,18-5.21,18-6.55,1.52-7.66-8.54-7.66-8.54-4.54-18.35-9.79-14.84-9.79-14.84-6.34-.51-8.31,11.52-8.31,11.52L431,611.39c-.24,13.67-7.1,11.22-7.1,11.22-4.47,0-6-9.44-6-9.44l-8.24-32.66c-5.33-17-19.34-16.57-19.34-16.57C375,561.94,371,574.28,371,574.28c-9.33,18.67-15.65,86.41-15.65,86.41-1.41,12.19-5.42,10.47-5.42,10.47-3.85-.21-4.84-8.78-4.84-8.78L332,606.65c-4.84-12.93-12.32-10.71-12.32-10.71-8.67,0-9.1,11.56-9.1,11.56l-8,91.89c-.79,16.08-5.9,15.11-5.9,15.11-7.63.55-8.69-15-8.69-15l-20.79-135C263.06,543.37,253,545.35,253,545.35c-15.67-1.25-15.71,13.56-15.71,13.56-2.72,17.64-12.28,15.7-12.28,15.7-12.33-.34-10.83-26.62-10.83-26.62-.83-40.29-38-103.72-38-103.72"
                                 transform="translate(-62.4 -75.4)" />
                             <circle cx="266.35" cy="266.07" r="40.11" class="cls-0" />
@@ -276,10 +266,10 @@
                 </li>
                 <li>
                     <a href="events.html" title="Events">Events</a>
-                    <a class="mobile-nav" href="about.html" title="About">About</a>
+                    <a class="header__nav--mobile" href="about.html" title="About">About</a>
                 </li>
                 <li>
-                    <a class="desktop-nav" href="about.html" title="About">About</a>
+                    <a class="header__nav--desktop" href="about.html" title="About">About</a>
                 </li>
             </ul>
         </nav>
