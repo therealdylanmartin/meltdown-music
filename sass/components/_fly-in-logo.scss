@@ -15,10 +15,10 @@
   border-radius: 20px;
   padding: 40px 20px;
   width: 600px;
-  @media screen and (max-width: 560px) {
+  @media #{$screen-sm} {
     width: 94%;
   }
-  @media screen and (max-width: 420px) {
+  @media #{$screen-xs} {
     background: rgba(0, 0, 0, 0);
     padding: 20px 20px;
   }
@@ -35,13 +35,13 @@
   &--text-meltdown {
     font-size: 82px;
     margin-left: 8px;
-    @media screen and (max-width: 560px) {
+    @media #{$screen-sm} {
       font-size: 12.6vw;
     }
   }
   &--text-music {
     font-size: 136px;
-    @media screen and (max-width: 560px) {
+    @media #{$screen-sm} {
       font-size: 20vw;
     }
   }
@@ -55,10 +55,10 @@
     opacity: 0.85;
     text-align: center;
     text-transform: uppercase;
-    @media screen and (max-width: 560px) {
+    @media #{$screen-sm} {
       font-size: 8vw;
     }
-    @media screen and (max-width: 420px) {
+    @media #{$screen-xs} {
       margin-top: 0;
     }
   }

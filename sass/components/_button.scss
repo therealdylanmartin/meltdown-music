@@ -55,7 +55,7 @@
   }
 }
 
-@media screen and (max-width: 420px) {
+@media #{$screen-xs} {
   .btn__round {
     cursor: pointer;
     opacity: 1;

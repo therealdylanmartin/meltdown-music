@@ -5,6 +5,16 @@
   --secondary-color: #75bf43;
 }
 
+/*  Breakpoints  */
+
+$screen-xs: "screen and (max-width: 420px)";
+$screen-sm: "screen and (max-width: 560px)";
+$screen-md: "screen and (max-width: 788px)";
+$screen-lg: "screen and (max-width: 980px)";
+$screen-xl: "screen and (min-width: 1200px)";
+
+$screen-height: "screen and (max-height: 700px)";
+
 /*  Colors  */
 
 $color-primary: #55c57a;
