@@ -89,7 +89,7 @@
     }
     /*  Title : Hours  */
     &-title {
-      color: var(--main-color);
+      color: $color-primary;
       display: block;
       font-family: $font-sans-secondary;
       font-size: 64px;

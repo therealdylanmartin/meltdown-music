@@ -52,7 +52,7 @@
             flex: 1;
           }
           &:hover {
-            color: var(--main-color);
+            color: $color-primary;
             text-decoration: underline;
           }
           svg {
@@ -62,7 +62,7 @@
       }
     }
     a.header__nav--disabled {
-      color: var(--main-color);
+      color: $color-primary;
       &:hover {
         text-decoration: none;
       }

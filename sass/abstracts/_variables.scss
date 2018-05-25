@@ -7,13 +7,9 @@
 
 /*  Colors  */
 
-$color-primary-test: #55c57a;
-$color-primary-test-light: lighten($color-primary-test, 60%);
-$color-primary-test-dark: darken($color-primary-test, 60%);
-
 $color-primary: #55c57a;
-$color-primary-light: #7ed56f;
-$color-primary-dark: #28b485;
+$color-primary-light: #75bf43;
+$color-primary-dark: darken($color-primary, 60%);
 
 $color-secondary-light: #ffb900;
 $color-secondary-dark: #ff7730;
@@ -42,12 +38,6 @@ $font-type: "American Typewriter", "Copse", "Luckiest Guy", Arial, sans-serif;
 $font-copy: "Baskerville", Arial, sans-serif;
 
 $font-size-default: 1.6rem;
-
-/*  Grid  */
-
-$grid-width: 100%;
-$gutter-y: 7rem;
-$gutter-x: 5rem;
 
 /*  Measurement Units  */
 
