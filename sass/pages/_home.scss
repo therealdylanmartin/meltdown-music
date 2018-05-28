@@ -4,13 +4,13 @@
   /*  Mobile Only Image  */
   &-mobile {
     display: none;
-    @media screen and (max-width: 560px) {
+    @media #{$screen-sm} {
       display: block;
     }
   }
   /*  Desktop Only Image  */
   &-desktop {
-    @media screen and (max-width: 560px) {
+    @media #{$screen-sm} {
       display: none;
     }
   }
@@ -26,18 +26,18 @@
     text-align: right;
     -webkit-transform: translateY(-114px);
     transform: translateY(-114px);
-    @media screen and (max-width: 788px) {
+    @media #{$screen-md} {
       margin-right: 50px;
       -webkit-transform: translateY(-160px);
       transform: translateY(-160px);
     }
-    @media screen and (max-width: 560px) {
+    @media #{$screen-sm} {
       font-size: 32px;
       opacity: 1;
       -webkit-transform: translateY(-140px);
       transform: translateY(-140px);
     }
-    @media screen and (max-width: 420px) {
+    @media #{$screen-xs} {
       font-size: 7vw;
       margin-right: 20px;
       -webkit-transform: translateY(-120px);
@@ -46,13 +46,13 @@
     /*  Mobile Only <br /> Tag  */
     &-mobile {
       display: none;
-      @media screen and (max-width: 788px) {
+      @media #{$screen-md} {
         display: inline;
       }
     }
     /*  Desktop Only "|" Character  */
     &-desktop {
-      @media screen and (max-width: 788px) {
+      @media #{$screen-md} {
         display: none;
       }
     }
@@ -79,11 +79,11 @@
     border-radius: 50%;
     height: 440px;
     width: 440px;
-    @media screen and (max-width: 560px) {
+    @media #{$screen-sm} {
       height: 420px;
       width: 420px;
     }
-    @media screen and (max-width: 420px) {
+    @media #{$screen-xs} {
       height: 90vw;
       width: 90vw;
     }
@@ -93,7 +93,7 @@
       display: block;
       font-family: $font-sans-secondary;
       font-size: 64px;
-      @media screen and (max-width: 420px) {
+      @media #{$screen-xs} {
         font-size: 14vw;
       }
     }
@@ -102,7 +102,7 @@
       font-family: $font-sub-heading;
       font-size: 34px;
       line-height: 2.1;
-      @media screen and (max-width: 420px) {
+      @media #{$screen-xs} {
         font-size: 7vw;
       }
     }
@@ -116,14 +116,14 @@
     /*  STore Image : Exterior  */
     &-img-1 {
       width: 43.35%;
-      @media screen and (max-width: 560px) {
+      @media #{$screen-sm} {
         width: 100%;
       }
     }
     /*  Google Map Box  */
     &-img-2 {
       width: 56.65%;
-      @media screen and (max-width: 560px) {
+      @media #{$screen-sm} {
         width: 100%;
       }
     }

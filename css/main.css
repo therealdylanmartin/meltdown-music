@@ -3,6 +3,7 @@
   --main-color: #4ea81e;
   --secondary-color: #75bf43; }
 
+/*  Breakpoints  */
 /*  Colors  */
 /*  Font  */
 /*  Measurement Units  */
@@ -614,60 +615,6 @@ body {
   }
 }
 */
-/*  Default Type Settings  */
-body {
-  color: #535353;
-  font-family: "Lato", sans-serif;
-  font-weight: 400;
-  line-height: 1.7; }
-
-/*  Primary Heading  */
-.heading-primary {
-  backface-visibility: hidden;
-  color: #fff;
-  text-transform: uppercase; }
-  .heading-primary--main {
-    animation: moveInLeft 0.7s ease-out;
-    display: block;
-    font-size: 6rem;
-    font-weight: 400;
-    letter-spacing: 3.5rem; }
-  .heading-primary--sub {
-    animation: moveInRight 0.7s ease-out;
-    display: block;
-    font-size: 2rem;
-    font-weight: 700;
-    letter-spacing: 1.75rem; }
-
-/*  Secondary Heading */
-.heading-secondary {
-  background-image: linear-gradient(to right, #75bf43, black);
-  color: transparent;
-  display: inline-block;
-  -webkit-background-clip: text;
-  background-clip: text;
-  font-size: 3.5rem;
-  font-weight: 700;
-  letter-spacing: 0.2rem;
-  text-transform: uppercase;
-  transition: all 0.2s; }
-  .heading-secondary:hover {
-    text-shadow: 0.5rem 1rem 2rem rgba(0, 0, 0, 0.2);
-    -webkit-transform: skewY(2deg) skewX(15deg) scale(1.1);
-    transform: skewY(2deg) skewX(15deg) scale(1.1); }
-
-/*  Tertiary Heading  */
-.heading-tertiary {
-  font-size: 1.6rem;
-  font-weight: 700;
-  text-transform: uppercase; }
-
-/*  General Copy  */
-.paragraph {
-  font-size: 1.6rem; }
-  .paragraph:not(:last-child) {
-    margin-bottom: 3rem; }
-
 /*  Flex-Box  */
 .u-flex,
 .u-flex-center,

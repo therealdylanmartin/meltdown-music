@@ -16,7 +16,7 @@
   height: 200px;
   padding: 0 10px;
   position: relative;
-  @media screen and (max-width: 560px) {
+  @media #{$screen-sm} {
     height: 280px;
   }
   &__nav {
@@ -31,11 +31,11 @@
       li {
         display: inline;
         text-align: center;
-        @media screen and (max-width: 420px) {
+        @media #{$screen-xs} {
           display: none;
         }
         &:nth-child(3) {
-          @media screen and (max-width: 420px) {
+          @media #{$screen-xs} {
             display: inline;
           }
         }
@@ -47,7 +47,7 @@
           text-decoration: none;
           text-transform: uppercase;
           transition: all 0.3s ease;
-          @media screen and (max-width: 560px) {
+          @media #{$screen-sm} {
             -webkit-box-flex: 1;
             flex: 1;
           }
@@ -70,20 +70,20 @@
     &--logo {
       height: 160px;
       margin-top: 18px;
-      @media screen and (max-width: 560px) {
+      @media #{$screen-sm} {
         height: 230px;
       }
     }
     &--mobile {
       display: none;
-      @media screen and (max-width: 560px) {
+      @media #{$screen-sm} {
         display: flex;
         justify-content: center;
         margin-top: 20px;
       }
     }
     &--desktop {
-      @media screen and (max-width: 560px) {
+      @media #{$screen-sm} {
         display: none;
       }
     }
