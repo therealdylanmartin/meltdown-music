@@ -1,8 +1,4 @@
-/*  Animated Gradient Background  */
-
 body {
-  -webkit-animation: Gradient 20s ease infinite;
-  animation: Gradient 20s ease infinite;
   background: linear-gradient(
     to left top,
     rgba(111, 213, 191, 0.4),
@@ -10,6 +6,5 @@ body {
     rgba(39, 228, 39, 0.2),
     rgba(255, 255, 255, 0.1)
   );
-  background-size: 600% 600%;
-  height: 4000px;
+  background-size: 100% 100%;
 }
