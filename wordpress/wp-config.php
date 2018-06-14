@@ -46,14 +46,14 @@ define('DB_COLLATE', '');
  *
  * @since 2.6.0
  */
-define('AUTH_KEY',         ':C8SQp |@dLILx<[2x%P(Q|1bW%zh-;}hMvNcFTO[6O9A2 yBKBdem1A_Bpu <cm');
-define('SECURE_AUTH_KEY',  'o9ZKPP_Dswt@/PsxJR0M kSV`/{z;iIP(>:0q?~p1P z~<<w5hQr@Zme:&D}Kr#Y');
-define('LOGGED_IN_KEY',    ']PY[1%f{wnJ.@Zw%oqb=q {%+*}?JIyMihhFPd2<}!ccdO|JiCN.Ta(!153Bq_ay');
-define('NONCE_KEY',        ':g2wseQ?%id<t`ws`HjKn~3=`itt d ^;4}C+x`5G8r1Il=)@](.o3p^li=DQd|?');
-define('AUTH_SALT',        'xPjlyKoFtLke}`dY={i>xe@ 9fJ,v{&osx2&=_W-JdBo)rwKF->kFeZs!Ex1hG.q');
-define('SECURE_AUTH_SALT', '_Vp,j}5 [?QThJ<(R&|hXwY=ShR<;j ;{}DT/D<=)piz^7L,BDj@y)WrX^J;U|?:');
-define('LOGGED_IN_SALT',   'W[_.KlR;M}8E9}He|ps/?mLoE5xUuw5($]pJKe0|B_F2q98Eb~`vaj1BYjE&$e_v');
-define('NONCE_SALT',       'zKj!g*#{M `51 >o9FnEbRr:4pt-eHqaG:h7Fh}`Y?o,ST!g1O&,2+,yu]vR_2ZK');
+define('AUTH_KEY',         'yytqWs#[$|o}B{g$>;YCm@n%G)[i|BeB FWY<<srJ/,5aj09WK9gvp.?5 X,60m_');
+define('SECURE_AUTH_KEY',  'ZRfu_,3[VP<1._U|j2%6;|(GS:LU7NlRKqrGSz;dJ>bm:elS~v_y((85:Rbj]_.!');
+define('LOGGED_IN_KEY',    'rKL#.,DkAtZGKbT@W?M6uKVBP#>&{B_jF{)qe*U3)$J{%fSh<a>O{,2Qh.PE}^|#');
+define('NONCE_KEY',        'S#=-f>L0j58&vF}%Y]j<dulpVU[*xlS3V]9CbQ%u=|-Q_^va<OJBloGXGR[JyesS');
+define('AUTH_SALT',        'v4xaf} =UG=l/I,oHi+_Z?vqTEfqO>RXt1]hiU (Mg-K%{ 90!7ly,>qcheQ+yrw');
+define('SECURE_AUTH_SALT', '~rSI+XV`O5O7_`lNJxPwf44u>CAIVlee!F)EpFYaJ 8YN5aqA:7w%?Pq%_ez-NUj');
+define('LOGGED_IN_SALT',   'Dh)]s/Tw}CmbJjQ&L$ECteeVWk3q^~6hljfI%vtNel)h`x0D)8hO]wMSRb!ZU`#n');
+define('NONCE_SALT',       '7nZqe2gEYZG^2HKlw9h]r1)GbmIRkL`Xt^A^2c-6nt43F#mN=p-[H]KdI{tKvHAM');
 
 /**#@-*/
 
@@ -63,7 +63,7 @@ define('NONCE_SALT',       'zKj!g*#{M `51 >o9FnEbRr:4pt-eHqaG:h7Fh}`Y?o,ST!g1O&,
  * You can have multiple installations in one database if you give each
  * a unique prefix. Only numbers, letters, and underscores please!
  */
-$table_prefix  = 'wp_';
+$table_prefix  = 'qzfmd_';
 
 /**
  * For developers: WordPress debugging mode.
@@ -87,3 +87,5 @@ if ( !defined('ABSPATH') )
 
 /** Sets up WordPress vars and included files. */
 require_once(ABSPATH . 'wp-settings.php');
+//Disable File Edits
+define('DISALLOW_FILE_EDIT', true);
