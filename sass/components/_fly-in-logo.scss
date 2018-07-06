@@ -1,9 +1,5 @@
-/*  Fly-In Logo Header  */
-
 .fly-in__heading {
-  -webkit-animation: FlyIn 0.4s ease-in-out 0.3s;
-  animation: FlyIn 0.4s ease-in-out 0.3s;
-  -webkit-animation-fill-mode: backwards;
+  animation: FlyIn 0.4s ease-in-out .3s, Gradient 4s ease infinite;
   animation-fill-mode: backwards;
   background: linear-gradient(
     to left top,
@@ -22,44 +18,49 @@
     background: rgba(0, 0, 0, 0);
     padding: 20px 20px;
   }
-  &--text-meltdown,
-  &--text-music {
-    color: $color-black;
-    font-family: $font-sans-primary;
-    letter-spacing: 3px;
-    line-height: 0.9;
-    opacity: .85;
-    text-align: center;
-    text-transform: uppercase;
+}
+
+.fly-in__heading--text-meltdown,
+.fly-in__heading--text-music {
+  color: $color-black;
+  font-family: $font-sans-primary;
+  letter-spacing: 3px;
+  line-height: 0.9;
+  opacity: 0.75;
+  text-align: center;
+  text-rendering: optimizeLegibility;
+  text-transform: uppercase;
+}
+
+.fly-in__heading--text-meltdown {
+  font-size: 82px;
+  margin-left: 8px;
+  @media #{$screen-sm} {
+    font-size: 12.6vw;
   }
-  &--text-meltdown {
-    font-size: 82px;
-    margin-left: 8px;
-    @media #{$screen-sm} {
-      font-size: 12.6vw;
-    }
+}
+
+.fly-in__heading--text-music {
+  font-size: 136px;
+  @media #{$screen-sm} {
+    font-size: 20vw;
   }
-  &--text-music {
-    font-size: 136px;
-    @media #{$screen-sm} {
-      font-size: 20vw;
-    }
+}
+
+.fly-in__heading--text-records-gear {
+  color: $color-primary;
+  font-family: $font-sans-secondary;
+  font-size: 58px;
+  letter-spacing: 4px;
+  margin-bottom: -24px;
+  margin-top: 10px;
+  opacity: 0.85;
+  text-align: center;
+  text-transform: uppercase;
+  @media #{$screen-sm} {
+    font-size: 8vw;
   }
-  &--text-records-gear {
-    color: $color-primary;
-    font-family: $font-sans-secondary;
-    font-size: 58px;
-    letter-spacing: 4px;
-    margin-bottom: -24px;
-    margin-top: 10px;
-    opacity: 0.85;
-    text-align: center;
-    text-transform: uppercase;
-    @media #{$screen-sm} {
-      font-size: 8vw;
-    }
-    @media #{$screen-xs} {
-      margin-top: 0;
-    }
+  @media #{$screen-xs} {
+    margin-top: 0;
   }
 }

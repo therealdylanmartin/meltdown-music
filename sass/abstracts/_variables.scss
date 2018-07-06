@@ -1,22 +1,19 @@
-/*  Variables  */
-
+/*  CSS Variables  */
 :root {
   --main-color: #4ea81e;
   --secondary-color: #75bf43;
 }
 
 /*  Breakpoints  */
-
-$screen-xs: "screen and (max-width: 420px)";
-$screen-sm: "screen and (max-width: 560px)";
-$screen-md: "screen and (max-width: 788px)";
-$screen-lg: "screen and (max-width: 980px)";
-$screen-xl: "screen and (min-width: 1200px)";
+$screen-xs: "screen and (max-width: 26.25em)"; // 420px
+$screen-sm: "screen and (max-width: 35em)"; // 560px
+$screen-md: "screen and (max-width: 49.25em)"; // 788px
+$screen-lg: "screen and (max-width: 61.25em)"; // 980px
+$screen-xl: "screen and (min-width: 75em)"; // 1200px
 
 $screen-height: "screen and (max-height: 700px)";
 
 /*  Colors  */
-
 $color-primary: #55c57a;
 $color-primary-light: #75bf43;
 $color-primary-dark: darken($color-primary, 60%);
@@ -39,8 +36,6 @@ $color-gradient-2: #8deb13;
 $color-gradient-3: #27e427;
 
 /*  Font  */
-
-
 $font-sans-primary: "Bowlby One", "Luckiest Guy", "American Typewriter", Arial, sans-serif;
 $font-sans-secondary: "Luckiest Guy", sans-serif;
 $font-sub-heading: "Copse", "American Typewriter", monospace;
@@ -50,9 +45,8 @@ $font-copy: "Baskerville", Arial, sans-serif;
 $font-size-default: 1.6rem;
 
 /*  Measurement Units  */
-
-$unit-xs: 1rem;
-$unit-sm: 2rem;
-$unit-md: 4rem;
-$unit-lg: 8rem;
-$unit-xl: 12rem;
+$unit-xs: 10px;
+$unit-sm: 20px;
+$unit-md: 40px;
+$unit-lg: 80px;
+$unit-xl: 120px;

@@ -2,15 +2,20 @@
 @import "abstracts/mixins";
 
 @import "base/base";
-@import "base/reset";
+@import "base/utilities";
+@import "layout/wordpress";
 
 @import "layout/background";
 @import "layout/header";
+
+@import "components/button";
 @import "components/fixed-nav";
 @import "components/fly-in-logo";
-@import "pages/home";
-@import "components/button";
 
-@import "base/utilities";
+@import "pages/home";
+@import "pages/records";
+@import "pages/gear";
+@import "pages/events";
+@import "pages/about";
 
 @import "base/animations";

@@ -1,61 +1,54 @@
 /*  Store : Interior Image & Address Info  */
 
-.store__img {
-  /*  Mobile Only Image  */
-  &-mobile {
+.store__img-mobile {
+  display: none;
+  @media #{$screen-sm} {
+    display: block;
+  }
+}
+
+.store__img-desktop {
+  @media #{$screen-sm} {
     display: none;
-    @media #{$screen-sm} {
-      display: block;
-    }
   }
-  /*  Desktop Only Image  */
-  &-desktop {
-    @media #{$screen-sm} {
-      display: none;
-    }
+}
+
+.store__img--text {
+  color: #fff;
+  font-family: $font-type;
+  font-size: 36px;
+  letter-spacing: 1px;
+  line-height: 1.3;
+  margin-right: 70px;
+  opacity: 0.85;
+  text-align: right;
+  transform: translateY(-114px);
+  @media #{$screen-md} {
+    margin-right: 50px;
+    transform: translateY(-160px);
   }
-  /*  Address & Phone Number  */
-  &--text {
-    color: #fff;
-    font-family: $font-type;
-    font-size: 36px;
-    letter-spacing: 1px;
-    line-height: 1.3;
-    margin-right: 70px;
-    opacity: 0.85;
-    text-align: right;
-    -webkit-transform: translateY(-114px);
-    transform: translateY(-114px);
-    @media #{$screen-md} {
-      margin-right: 50px;
-      -webkit-transform: translateY(-160px);
-      transform: translateY(-160px);
-    }
-    @media #{$screen-sm} {
-      font-size: 32px;
-      opacity: 1;
-      -webkit-transform: translateY(-140px);
-      transform: translateY(-140px);
-    }
-    @media #{$screen-xs} {
-      font-size: 7vw;
-      margin-right: 20px;
-      -webkit-transform: translateY(-120px);
-      transform: translateY(-120px);
-    }
-    /*  Mobile Only <br /> Tag  */
-    &-mobile {
-      display: none;
-      @media #{$screen-md} {
-        display: inline;
-      }
-    }
-    /*  Desktop Only "|" Character  */
-    &-desktop {
-      @media #{$screen-md} {
-        display: none;
-      }
-    }
+  @media #{$screen-sm} {
+    font-size: 32px;
+    opacity: 1;
+    transform: translateY(-140px);
+  }
+  @media #{$screen-xs} {
+    font-size: 7vw;
+    margin-right: 20px;
+    transform: translateY(-120px);
+  }
+}
+
+.store__img--text-mobile {
+  display: none;
+  @media #{$screen-md} {
+    display: inline;
+  }
+}
+
+.store__img--text-desktop {
+  @media #{$screen-md} {
+    display: none;
   }
 }
 
@@ -64,68 +57,62 @@
 .store__hours {
   margin: $unit-xl auto calc(#{$unit-xl}* 2);
   text-align: center;
-  /*  Round Container  */
-  &--box {
-    -webkit-animation: GradientAlt 20s ease infinite;
-    animation: GradientAlt 20s ease infinite;
-    background: linear-gradient(
-      to right bottom,
-      rgba(111, 213, 191, 0.2),
-      rgba(141, 235, 19, 0.1),
-      rgba(39, 228, 39, 0.3)
-    );
-    background-position: top;
-    background-size: 400% 400%;
-    border-radius: 50%;
-    height: 440px;
-    width: 440px;
-    @media #{$screen-sm} {
-      height: 420px;
-      width: 420px;
-    }
-    @media #{$screen-xs} {
-      height: 90vw;
-      width: 90vw;
-    }
-    /*  Title : Hours  */
-    &-title {
-      color: $color-primary;
-      display: block;
-      font-family: $font-sans-secondary;
-      font-size: 64px;
-      @media #{$screen-xs} {
-        font-size: 14vw;
-      }
-    }
-    /*  Hours Open  */
-    &-text {
-      font-family: $font-sub-heading;
-      font-size: 34px;
-      line-height: 2.1;
-      @media #{$screen-xs} {
-        font-size: 7vw;
-      }
-    }
+}
+
+.store__hours--box {
+  animation: GradientAlt 20s ease infinite;
+  background: linear-gradient(
+    to right bottom,
+    rgba(111, 213, 191, 0.2),
+    rgba(141, 235, 19, 0.1),
+    rgba(39, 228, 39, 0.3)
+  );
+  background-position: top;
+  background-size: 400% 400%;
+  border-radius: 50%;
+  height: 440px;
+  width: 440px;
+  @media #{$screen-sm} {
+    height: 420px;
+    width: 420px;
+  }
+  @media #{$screen-xs} {
+    height: 90vw;
+    width: 90vw;
+  }
+}
+
+.store__hours--box-title {
+  color: $color-primary;
+  display: block;
+  font-family: $font-sans-secondary;
+  font-size: 64px;
+  @media #{$screen-xs} {
+    font-size: 14vw;
+  }
+}
+
+.store__hours--box-text {
+  font-family: $font-sub-heading;
+  font-size: 34px;
+  line-height: 2.1;
+  @media #{$screen-xs} {
+    font-size: 7vw;
   }
 }
 
 /*  Store : Image & Google Map API  */
 
-.store__map {
-  &--box {
-    /*  STore Image : Exterior  */
-    &-img-1 {
-      width: 43.35%;
-      @media #{$screen-sm} {
-        width: 100%;
-      }
-    }
-    /*  Google Map Box  */
-    &-img-2 {
-      width: 56.65%;
-      @media #{$screen-sm} {
-        width: 100%;
-      }
-    }
+.store__map--box-img-1 {
+  width: 43.35%;
+  @media #{$screen-sm} {
+    width: 100%;
+  }
+}
+
+.store__map--box-img-2 {
+  width: 56.65%;
+  @media #{$screen-sm} {
+    width: 100%;
   }
 }
