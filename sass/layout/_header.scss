@@ -60,6 +60,7 @@
   }
   a.header__nav--disabled {
     color: $color-primary;
+    user-select: none;
     &:hover {
       text-decoration: none;
     }
