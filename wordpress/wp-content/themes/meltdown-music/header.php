@@ -18,7 +18,7 @@
     <?php wp_head(); ?>
 </head>
 
-<body <?php body_class(); ?>>
+<body id="homepage" <?php body_class(); ?>>
 
     <header id="header" class="header" role="banner">
 
